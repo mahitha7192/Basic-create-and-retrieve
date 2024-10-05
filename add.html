@@ -1,0 +1,63 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">ADD A PERSON</h1><br><br>
+    <div ><center>
+        <form method="post" >
+            <label for="name">NAME:</label>
+            <input type="text" ><br><br>
+            <label for="dob">D.O.B:</label>
+            <input type="text" ><br><br>
+            <label for="name">WORK:</label>
+            <input type="work" ><br><br>
+            <button type="submit">submit</button>
+        </form>
+    </center></div> 
+</body>
+</html>
+<!--<script src=""https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js""></script>
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+       
+      });
+    });
+    </script>
+
+<body>
+    <button>add</button>
+</body>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Person</title>
+</head>
+<body>
+    <h1 style="text-align: center;">ADD A PERSON</h1><br><br>
+    <div>
+        <center>
+            <form method="POST">  
+                <label for="name">NAME:</label>
+                <input type="text" name="name" required><br><br>
+                
+                <label for="dob">D.O.B:</label>
+                <input type="text" name="dob" required><br><br>
+                
+                <label for="work">WORK:</label>
+                <input type="text" name="work" required><br><br>
+                
+                <button type="submit">Submit</button>  <!-- No need for jQuery to handle this -->
+            </form>
+        </center>
+    </div>
+</body>
+</html>

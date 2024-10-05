@@ -1,0 +1,43 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Home Table</title>
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $(".mybutton").click(function(){
+                        window.location.href = "/add";
+                    });
+                  });
+                </script>
+        </head>
+        <body>
+            <h1 style="text-align: center;">My first CRUD in FSD</h1>
+        
+            <!-- Button to add a new entry -->
+            <button class="mybutton">Add</button>
+            
+            <!-- Table displaying data -->
+            <table border="1" width="1000px" height="100px">
+                <tr>
+                    <th>NAME</th>
+                    <th>D.O.B</th>
+                    <th>WORK</th>
+                </tr>
+                {% for holds in hold %}
+                <tr>
+                    <td>{{ holds['name'] }}</td>
+                    <td>{{ holds['dob'] }}</td>
+                    <td>{{ holds['work'] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        
+            
+                
+            
+        </body>
+        </html>
+        
